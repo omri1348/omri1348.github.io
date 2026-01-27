@@ -71,6 +71,42 @@
     <hr class="sectionTitleRule">
     <hr class="sectionTitleRule2">
 	  
+<div class="paper-container" style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 60px; font-family: sans-serif;">
+
+  <div class="section2Content" style="flex: 2;">
+    <h2 class="sectionContentTitle" >
+      FFN Fusion: Rethinking Sequential Computation in Large Language Models
+    </h2>
+    
+    <h3 class="sectionContentSubTitle" >
+      Akhiad Bercovich*, Mohammad Dabbah*, <strong>Omri Puny*</strong>, Ido Galil, Amnon Geifman, Yonatan Geifman, Izhak Golan, Ehud Karpas, Itay Levy, Zach Moshe, Najeeb Nabwani, Tomer Ronen, Itamar Schen, Elad Segal, Ido Shahaf, Oren Tropp, Ran Zilberstein, Ran El-Yaniv
+    </h3>
+    
+    <h3 class="sectionContentSubTitle" >
+      <em>Conference on Neural Information Processing Systems (NeurIPS 2025) <strong>Spotlight</strong></em>
+    </h3>
+
+    <aside class="externalResourcesNav" style="margin-left: 0px" > 
+      <div class="dropdown"> 
+        <span>Abstract</span>
+        <div class="dropdown-content">
+          <p >
+            We introduce FFN Fusion, an architectural optimization technique that reduces sequential computation in large language models by identifying and exploiting natural opportunities for parallelization. Our key insight is that sequences of Feed-Forward Network (FFN) layers, particularly those remaining after the removal of specific attention layers, can often be parallelized with minimal accuracy impact. We develop a principled methodology for identifying and fusing such sequences, transforming them into parallel operations that significantly reduce inference latency while preserving model behavior. Applying these techniques to Llama-3.1-405B-Instruct, we create Llama-Nemotron-Ultra-253B-Base (Ultra-253B-Base), an efficient and soon-to-be publicly available model that achieves a 1.71X speedup in inference latency and 35X lower per-token cost while maintaining strong performance across benchmarks. Through extensive experiments on models from 49B to 253B parameters, we demonstrate that FFN Fusion becomes increasingly effective at larger scales and can complement existing optimization techniques like quantization and pruning. Most intriguingly, we find that even full transformer blocks containing both attention and FFN layers can sometimes be parallelized, suggesting new directions for neural architecture design.
+
+          </p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="https://arxiv.org/abs/2503.18908" target="_blank" >Arxiv</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="sectionContent" style="flex: 1; min-width: 300px;">
+    <img src="AboutPageAssets/images/ffn_fusion.jpg" alt="FFN Fusion Diagram" style="width: 100%; height: auto; display: block;"/>
+  </div>
+
+</div>
 
 	   <div class="sectionContent">
 	  <img src="AboutPageAssets/images/dflow.png" style='height: 100%; width: 100%; object-fit: contain' alt=""/>
