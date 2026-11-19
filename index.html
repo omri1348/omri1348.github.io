@@ -13,7 +13,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="I am a PhD student in the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science under the supervision of Prof. Yaron Lipman. My research focuses on developing deep learning models for iregular data, mainly graphs and point clouds. ">
+<meta name="description" content="I am a Deep Learning Researcher at NVIDIA. I completed my PhD in Computer Science and Applied Mathematics at the Weizmann Institute of Science in 2026, advised by Prof. Yaron Lipman. My research focuses on geometric deep learning for generative modeling, with an emphasis on symmetry and structured data.">
 <title>Omri Puny </title>
 <link href="AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -32,9 +32,9 @@
   <!-- Identity details -->
   <section class="profileHeader">
     <h1>Omri Puny</h1>
-    <h3>PhD Candidate</h3>
+    <h3>Deep Learning Researcher at NVIDIA</h3>
     <hr>
-    <p>I am a PhD student in the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science under the supervision of <a href="https://www.wisdom.weizmann.ac.il/~ylipman/" target="_blank"> Prof. Yaron Lipman</a>. My research focuses on developing deep learning models for iregular data, mainly graphs and point clouds. </p>
+    <p>I am a Deep Learning Researcher at NVIDIA. I completed my PhD in Computer Science and Applied Mathematics at the Weizmann Institute of Science in 2026, advised by <a href="https://www.wisdom.weizmann.ac.il/~ylipman/" target="_blank" rel="noopener noreferrer">Prof. Yaron Lipman</a>. My research focuses on geometric deep learning for generative modeling, with an emphasis on symmetry and structured data.</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
   </section>
@@ -42,7 +42,7 @@
   <aside class="socialNetworkNavBar">
 	   <div class="socialNetworkNav"> 
       <!-- Add a Anchor tag with nested img tag here --> 
-		   <a href="mailto:omri.puny@weizmann.ac.il">
+		   <a href="mailto:punyomri@gmail.com">
       <img src="AboutPageAssets/images/mail.png"  alt="sample" width="30" ></a> </div>
     <div class="socialNetworkNav">
       <!-- Add a Anchor tag with nested img tag here --> 
@@ -70,6 +70,28 @@
   <h2 class="sectionTitle">Publications</h2>
     <hr class="sectionTitleRule">
     <hr class="sectionTitleRule2">
+
+    <!-- Space Group Conditional Flow Matching -->
+    <div style="display: flow-root; clear: both">
+    <div class="sectionContent">
+      <img src="AboutPageAssets/images/sgfm.gif" style="height: 100%; width: 100%; object-fit: contain" alt="Animated crystal-generation trajectory from SGFM."/>
+    </div>
+    <section class="section2Content">
+      <h2 class="sectionContentTitle">Space Group Conditional Flow Matching</h2>
+      <h3 class="sectionContentSubTitle"><strong>Omri Puny</strong>, Yaron Lipman, Benjamin Kurt Miller</h3>
+      <h3 class="sectionContentSubTitle"><em>Conference on Neural Information Processing Systems (NeurIPS 2026)</em></h3>
+    </section>
+    <aside class="externalResourcesNav">
+      <div class="dropdown"><span>Abstract</span>
+        <div class="dropdown-content">
+          <p>Inorganic crystals are periodic, highly symmetric arrangements of atoms in three-dimensional space. Their structures are constrained by the symmetry operations of a crystallographic space group and restricted to lie in specific affine subspaces known as Wyckoff positions. The frequency an atom appears in the crystal and its rough positioning are determined by its Wyckoff positions. Most generative models that predict atomic coordinates overlook these symmetry constraints, leading to unrealistically high populations of proposed crystals exhibiting limited symmetry. We introduce Space Group Conditional Flow Matching (SGFM), a novel generative framework that samples significantly closer to the target population of highly symmetric, stable crystals. We achieve this by conditioning the entire generation process on a given space group and set of Wyckoff positions; specifically, we define a conditionally symmetric noise distribution and a group-conditioned, equivariant, parametric vector field that restricts the motion of atoms to their initial Wyckoff position. Our form of group-conditioned equivariance is achieved using an efficient reformulation of group averaging tailored for symmetric crystals. It reduces the computational overhead of symmetrization to a negligible level. SGFM achieves state-of-the-art performance in De Novo Generation on the MP-20 benchmark.</p>
+        </div>
+      </div>
+      <div class="dropdown"><a href="https://arxiv.org/abs/2509.23822" target="_blank" rel="noopener noreferrer">Arxiv</a></div>
+      <div class="dropdown"><a href="https://github.com/omri1348/SGFM" target="_blank" rel="noopener noreferrer">Github</a></div>
+    </aside>
+    </div>
+
 	  
 <div class="paper-container" style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 60px; font-family: sans-serif;">
 
